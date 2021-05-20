@@ -86,4 +86,17 @@ h1::after {
   position: absolute;
   right: 0;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar i {
+  width: 25px;
+  padding: 5px;
+  color: #fff;
+  background: #f44336;
+  border-radius: 50%;
+  cursor: pointer;
 }
