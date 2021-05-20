@@ -5,6 +5,15 @@ const slide = document.getElementById('slide'),
 let x = 0;
 
 upArrow.onclick = function () {
-  x = x - 300;
-  slide.style.top = x + 'px';
+  if (x > '-900') {
+    x = x - 300;
+    slide.style.top = x + 'px';
+  }
+};
+
+downArrow.onclick = function () {
+  if (x < '0') {
+    x = x + 300;
+    slide.style.top = x + 'px';
+  }
 };
